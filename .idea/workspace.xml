@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c239eb00-38a3-4047-bbee-d008182cfa96" name="Changes" comment="crude first parse">
+    <list default="true" id="c239eb00-38a3-4047-bbee-d008182cfa96" name="Changes" comment="Task1 done">
+      <change afterPath="$PROJECT_DIR$/src/XMLToXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XMLToHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLToHTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764814549405</updated>
-      <workItem from="1764814550457" duration="5309000" />
+      <workItem from="1764814550457" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -86,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764819566602</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Task1 done">
+      <option name="closed" value="true" />
+      <created>1764820036786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764820036786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="crude first parse" />
-    <option name="LAST_COMMIT_MESSAGE" value="crude first parse" />
+    <MESSAGE value="Task1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task1 done" />
   </component>
 </project>

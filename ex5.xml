@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<olympics>
+
+
+    <slogan>Moths &amp; Flames</slogan>
+
+    <year>4040</year>
+
+    <countries>
+
+        <country code="AT">
+            <athlete id="_1">
+                <name>Christina Riser</name>
+                <sport>Ski</sport>
+                <medals>
+                    <gold>2</gold>
+                    <silver>2</silver>
+                    <bronze>3</bronze>
+                </medals>
+            </athlete>
+			
+			<athlete id="_4">
+                <name>Rosi Mara</name>
+                <sport>Swimming</sport>
+                <medals>
+                    <gold>4</gold>
+                    <silver>1</silver>
+                    <bronze>1</bronze>
+                </medals>
+            </athlete>
+        </country>
+
+        <country code="FR">
+            <athlete id="_2">
+                <name>Mino Grazer</name>
+                <sport>Swimming</sport>
+                <medals>
+                    <gold>0</gold>
+                    <silver>10</silver>
+                    <bronze>2</bronze>
+                </medals>
+            </athlete>
+        </country>
+
+        <country code="EN">
+            <athlete id="_3">
+                <name>Sky Riser</name>
+                <sport>Ski</sport>
+                <medals>
+                    <gold>0</gold>
+                    <silver>10</silver>
+                    <bronze>4</bronze>
+                </medals>
+            </athlete>
+			
+			<athlete id="_5">
+                <name>Selina Lima</name>
+                <sport>Swimming</sport>
+                <medals>
+                    <gold>3</gold>
+                    <silver>0</silver>
+                    <bronze>6</bronze>
+                </medals>
+            </athlete>
+			
+			<athlete id="_6">
+                <name>Rob Boss</name>
+                <sport>Running</sport>
+                <medals>
+                    <gold>12</gold>
+                    <silver>1</silver>
+                    <bronze>4</bronze>
+                </medals>
+            </athlete>
+        </country>
+
+    </countries>
+
+
+</olympics>
