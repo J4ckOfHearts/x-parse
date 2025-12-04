@@ -68,9 +68,9 @@ public class XMLToHTML {
             }
 
             if (offered.item(i).getAttributes().getNamedItem("vegetarian").getTextContent().equals("true")) {
-                out.append("<h4>").append(offered.item(i).getAttributes().getNamedItem("name").getTextContent()).append(" (v) </h3>");
+                out.append("<h4>").append(offered.item(i).getAttributes().getNamedItem("name").getTextContent()).append(" (v) (id:").append(offered.item(i).getAttributes().getNamedItem("id").getTextContent()).append(") </h3>");
             } else {
-                out.append("<h4>").append(offered.item(i).getAttributes().getNamedItem("name").getTextContent()).append("</h3>");
+                out.append("<h4>").append(offered.item(i).getAttributes().getNamedItem("name").getTextContent()).append(" (id:").append(offered.item(i).getAttributes().getNamedItem("id").getTextContent()).append(") </h3>");
             }
 
             out.append("<div class='block'>");
@@ -92,6 +92,7 @@ public class XMLToHTML {
             NodeList person = personnel.item(i).getChildNodes();
             String name = null;
             String transport = null;
+            String c_id = ((Element) personnel.item(i)).getAttribute("id");
 
             for (int j = 0; j < person.getLength(); j++) {
                 if (person.item(j).getNodeType() != Node.ELEMENT_NODE) {
@@ -100,7 +101,7 @@ public class XMLToHTML {
 
                 String nodeName = person.item(j).getNodeName();
                 if ("name".equals(nodeName)) {
-                    name = person.item(j).getTextContent();
+                    name = person.item(j).getTextContent() + " (" + c_id + ")";
                 } else if ("transport".equals(nodeName)) {
                     transport = person.item(j).getTextContent();
                 }
