@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE takeout SYSTEM "takeout.dtd">
+
+<takeout>
+
+    <offered-dishes>
+        <dish id="d1" name="Prosciutto" vegetarian="false">
+            Pizza with ham on tomato and mozzarella
+        </dish>
+        <dish id="d2" name="Pepperoni" vegetarian="false">
+            Pizza with pepperoni slices and mozzarella
+        </dish>
+        <dish id="d3" name="Quattro Formaggi" vegetarian="true">
+            Pizza with a blend of four different cheeses
+        </dish>
+        <dish id="d4" name="Veggie Deluxe" vegetarian="true">
+            Pizza with mixed vegetables over a light tomato base
+        </dish>
+    </offered-dishes>
+
+    <personnel>
+        <person id="p1">
+            <name>Andi</name>
+            <transport>bicycle</transport>
+        </person>
+        <person id="p2">
+            <name>Piet</name>
+        </person>
+        <person id="p3">
+            <name>Lisa</name>
+            <transport>car</transport>
+        </person>
+    </personnel>
+
+    <current-orders>
+
+        <order order-id="o1">
+            <address deliveredBy="p1">Mühlweg 5</address>
+            <item dish="d1" price="8.50"/>
+            <item dish="d3" price="10.00"/>
+        </order>
+
+        <order order-id="o2">
+            <self-pickup client-name="Emma"/>
+            <item dish="d2" price="12.00"/>
+            <item dish="d4" price="14.00"/>
+            <item dish="d3" price="9.00"/>
+        </order>
+
+        <order order-id="o3">
+            <address deliveredBy="p3">Around the corner 12</address>
+            <item dish="d3" price="9.00"/>
+        </order>
+
+    </current-orders>
+
+</takeout>
