@@ -3,6 +3,10 @@
 public class Main {
     public static void main(String[] args) {
 
+        /////////////////////////////////
+        // Not part of Exercise - oops //
+        /// /////////////////////////////
+        /*
         try {
             String inPath = "takeout.xml";
             String outPath = "takeout.html";
@@ -10,10 +14,14 @@ public class Main {
         } catch (Exception e) {
             System.out.println("An error occurred while parsing to HTML: " + e.getMessage());
         }
+        */
 
+        ///////////////////////
+        // Actual EXERCISE 5 //
+        ///////////////////////
         try {
-            String inPath = "ex5.xml";
-            String outPath = "ex5-out.html";
+            String inPath = "ex6.xml";
+            String outPath = "ex6-out.xml";
             XMLToXML.parse(inPath, outPath);
         } catch (Exception e) {
             System.out.println("An error occurred while parsing to XML: " + e.getMessage());

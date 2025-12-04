@@ -15,27 +15,18 @@ public class XMLToHTML {
 
     public static void parse(String inPath, String outPath) throws Exception {
 
-        //factory instantiation
-        //factory API that enables applications to obtain a parser that
-        //produces DOM object trees from XML documents
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-        //validation and namespaces
         factory.setValidating(true);
         factory.setNamespaceAware(true);
 
-        //parser instantiation
-        //API to obtain DOM document instances from XML documents
         DocumentBuilder builder = factory.newDocumentBuilder();
 
-        //install ErrorHandler
         builder.setErrorHandler(new MyErrorHandler());
 
-        //parsing instantiation
         Document doc = builder.parse(inPath);
         doc.getDocumentElement().normalize();
 
-        //actual parsing now
         StringBuilder out = new StringBuilder();
         out.append("<!DOCTYPE html><html><head><meta charset=\"UTF-8\">");
         out.append("<title>Takeout View</title>");
@@ -45,7 +36,6 @@ public class XMLToHTML {
         processNode(doc, out);
         out.append("</body></html>");
 
-        //output result to file
         try (PrintWriter pw = new PrintWriter(outPath, StandardCharsets.UTF_8)) {
             pw.println(out);
         }
